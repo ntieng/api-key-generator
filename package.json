@@ -1,20 +1,19 @@
 {
-    "name": "api-key-generator",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "dev": "npx tsc && lite-server"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-      "typescript": "^5.5.4"
-    },
-    "devDependencies": {
-      "lite-server": "^2.6.1"
-    }
+  "name": "api-key-generator",
+  "version": "1.0.0",
+  "description": "A simple tool to generate API keys",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "lite-server",
+    "dev": "npm run build && npm run start",
+    "vercel-build": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "typescript": "^5.0.0"
   }
-  
+}
