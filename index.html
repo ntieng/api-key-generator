@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Key Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>API Key Generator</h1>
+    <div class="form-group">
+        <label for="key-length">Select Key Length:</label>
+        <select id="key-length">
+            <option value="32">32-bit</option>
+            <option value="64">64-bit</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="key-type">Select Key Type:</label>
+        <select id="key-type">
+            <option value="alphanumeric">Alphanumeric</option>
+            <option value="numeric">Numbers Only</option>
+            <option value="alphabetic">Alphabets Only</option>
+        </select>
+    </div>
+    <button id="generate-btn">Generate API Key</button>
+    <div class="input-group">
+        <input type="text" id="api-key" readonly placeholder="Your API Key will appear here...">
+        <button id="copy-btn">Copy</button>
+    </div>
+</div>
+
+<!-- Notification container -->
+<div id="notification" class="notification"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
